@@ -8,7 +8,7 @@ This project documents my reinforcement learning experiments with a Franka Panda
 
 ## Demo
 
-![Franka Panda pushing a cube using SAC + HER](assets/franka_push_demo.gif)
+![Franka Panda pushing a cube using SAC + HER](assets/franka_push_demo.gif.gif)
 
 **400k timesteps | 88% success rate over 100 evaluation episodes**
 
