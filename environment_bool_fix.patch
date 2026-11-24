@@ -1,0 +1,13 @@
+diff --git a/panda_mujoco_gym/envs/panda_env.py b/panda_mujoco_gym/envs/panda_env.py
+index beee6c5..4ff3417 100644
+--- a/panda_mujoco_gym/envs/panda_env.py
++++ b/panda_mujoco_gym/envs/panda_env.py
+@@ -136,7 +136,7 @@ class FrankaEnv(MujocoRobotEnv):
+ 
+         info = {"is_success": self._is_success(obs["achieved_goal"], self.goal)}
+ 
+-        terminated = info["is_success"]
++        terminated = bool(info["is_success"])
+         truncated = self.compute_truncated(obs["achieved_goal"], self.goal, info)
+         reward = self.compute_reward(obs["achieved_goal"], self.goal, info)
+ 

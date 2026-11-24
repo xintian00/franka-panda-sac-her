@@ -1,0 +1,40 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+==================================================
+SAC + HER Model Comparison
+100 episodes per model
+Seeds: 1000 - 1099
+==================================================
+
+==================================================
+Testing: 200k Final
+==================================================
+Model not found: ./models/sac_her_local_v1_200k/final_model_200k.zip
+
+==================================================
+Testing: 400k Checkpoint
+==================================================
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Completed 20/100
+Completed 40/100
+Completed 60/100
+Completed 80/100
+Completed 100/100
+
+Results:
+Successful episodes: 88
+Success rate: 88.0%
+Average episode length: 11.85
+
+==================================================
+Testing: Best Model
+==================================================
+Model not found: ./models/sac_her_local_v1_500k/best_model.zip
+
+==================================================
+FINAL COMPARISON
+==================================================
+400k Checkpoint: 88.0%
+
+All tests finished.

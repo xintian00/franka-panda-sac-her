@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env/
+
+# Training logs and temporary data
+logs/
+tensorboard/
+*.pkl
+*.npz
+
+# Local artifacts
+.DS_Store
+Thumbs.db
